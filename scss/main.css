@@ -1,0 +1,816 @@
+.sm-btn {
+  background: transparent;
+  border: 1px solid #ffc107;
+  padding: 0.5rem 2rem;
+  margin-top: 3rem;
+}
+.sm-btn a {
+  color: #7f2d92;
+  transition: all 0.45s ease-in-out;
+}
+.sm-btn a:hover {
+  color: #007bff;
+}
+
+.btn-lg {
+  padding: 1.2em 1em;
+  background: #8c3590;
+  max-width: 300px;
+  border-radius: 150px;
+  border: 5px solid #6d2b8a;
+  transition: all 0.45s ease-in-out;
+  font-weight: 600;
+  width: 90%;
+  margin: 0.5rem;
+}
+.btn-lg:hover {
+  background: #fbb44a;
+}
+
+.yellow {
+  background: #fbb44a;
+}
+
+#pi-btn {
+  border: 1px solid #ffc107;
+  padding: 0.7rem;
+  color: white;
+  transition: all 0.45s ease-in-out;
+  display: inline-block;
+}
+#pi-btn:hover {
+  background: #343a40;
+  color: #ffc107;
+}
+
+.send-button {
+  border: none;
+  font-size: 1.5rem;
+  width: 85%;
+  text-align: right;
+  background: none;
+  color: #7f2d92;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.download-btn {
+  font-size: 1rem;
+  background: #fbb44a;
+  font-weight: bold;
+  padding: 3px 15px;
+  color: #343a40;
+  transition: all 0.45s ease-in-out;
+}
+.download-btn:hover {
+  color: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.menu-btn {
+  position: absolute;
+  position: fixed;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.45s ease-in-out;
+}
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: black;
+  transition: all 0.45s ease-in-out;
+}
+.menu-btn.close {
+  transform: translate(180deg);
+}
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(6.5px, -6.5px);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  background: linear-gradient(0.25turn, #8c3590, #2c4982);
+  transform: translate3d(0, -100%, 0);
+  transition: all 0.45s ease-in-out;
+}
+.menu .menu-nav {
+  padding: 1rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu .menu-nav a {
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.45s ease-in-out;
+}
+.menu .menu-nav a:hover {
+  color: #ffc107;
+  border-bottom: 1px solid #ffc107;
+  padding-bottom: 10px;
+}
+.menu.show {
+  transform: translate3d(0, 0, 0);
+}
+.menu.show {
+  visibility: visible;
+}
+
+.desktop-nav {
+  padding: 1rem;
+}
+.desktop-nav a {
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.45s ease-in-out;
+  margin: 0 1rem;
+  font-size: 12px;
+}
+.desktop-nav a:hover {
+  color: #ffc107;
+  border-bottom: 1px solid #ffc107;
+  padding-bottom: 10px;
+}
+
+.hero {
+  color: white;
+  padding: 2rem;
+  position: relative;
+}
+.hero .container {
+  display: flex;
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16rem 0;
+}
+.hero iframe, .hero img {
+  border-radius: 10px;
+}
+.hero .left-col {
+  max-width: 700px;
+}
+.hero .curls_image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 100%;
+}
+.hero .curls_image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  margin-bottom: 1.5rem;
+}
+.hero .cta-button {
+  background-color: #ffc107;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero .cta-button:hover {
+  background-color: #e0a800;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+  }
+  .hero .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .hero .cta-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+input,
+textarea {
+  width: 85%;
+  padding: 1.3rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  border: 1px solid #e1e1e1;
+  background: #f3f3f3;
+  transition: outline-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  resize: none;
+}
+input:focus,
+textarea:focus {
+  outline: 1px solid #7f2d92;
+  -moz-outline-radius: 3px;
+}
+
+.header .main_logo {
+  display: flex;
+  align-items: center;
+  color: #ffc107;
+  padding: 1rem;
+}
+.header .main_logo img {
+  width: 50px;
+  margin-right: 0.5rem;
+}
+
+.hero,
+header {
+  background: linear-gradient(0.25turn, #8c3590, #2c4982);
+}
+.hero .left-col,
+header .left-col {
+  color: white;
+}
+
+.hero {
+  line-height: 1.5;
+}
+
+.crypto h2 {
+  text-align: center;
+  color: #7f2d92;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.crypto .sm-btn {
+  margin-top: 1rem;
+}
+
+.features {
+  text-align: center;
+}
+.features h2 {
+  font-size: 1.2rem;
+}
+.features p {
+  color: #777;
+}
+.features .features-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 3rem;
+  place-items: center;
+}
+
+.mobile-app {
+  background: linear-gradient(0.25turn, #8c3590, #2c4982);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+.mobile-app .mobile-app-text h1 {
+  color: #fbb44a;
+  margin-bottom: 1rem;
+}
+.mobile-app .mobile-app-text p {
+  color: white;
+  line-height: 1.7;
+}
+
+.contact-text h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+.contact-text h3 {
+  color: #7f2d92;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.footer {
+  background: #1d0a26;
+  margin-top: 5rem;
+  height: 14rem;
+  padding: 2rem;
+}
+.footer .footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer-wrapper .icons {
+  margin-bottom: 1.5rem;
+}
+.footer .footer-wrapper .icons i {
+  margin-left: 1rem;
+  font-size: 1.7rem;
+  color: #aaa;
+  cursor: pointer;
+  transition: all 0.45s ease-in-out;
+}
+.footer .footer-wrapper .icons i:hover {
+  color: #f8f9fa;
+}
+.footer .footer-wrapper p {
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+  }
+  header .desktop-nav {
+    display: none;
+  }
+  header .main_logo {
+    position: relative;
+    z-index: 3;
+  }
+  header .main_logo img {
+    width: 50px;
+    margin-right: 0.5rem;
+  }
+  header .menu-nav li {
+    margin-bottom: 1.3rem;
+  }
+  .crypto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .crypto h2 {
+    width: 80%;
+    margin-top: 1rem;
+  }
+  .crypto img {
+    max-width: 100%;
+    margin: 2rem 0;
+  }
+  .crypto .text-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features {
+    margin-top: 5rem;
+  }
+  .features img,
+  .features h2,
+  .features p {
+    margin-bottom: 2rem;
+  }
+  .features .card {
+    text-align: center;
+    width: 80%;
+  }
+  .mobile-app {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobile-app img {
+    margin: 3rem 0;
+    max-width: 200px;
+  }
+  .mobile-app .mobile-app-text {
+    padding: 2rem;
+  }
+  .mobile-app .app-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .mobile-app .app-buttons img {
+    margin: 1rem 0;
+    min-width: 270px;
+    cursor: pointer;
+  }
+  .contact-text {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  form .name-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  form label {
+    width: 85%;
+    text-align: left;
+  }
+  form label,
+  form input {
+    margin: 0.5rem 0;
+  }
+}
+.fixed-download {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  background: #ededed;
+  width: 100%;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 1000px) {
+  .header .main_logo {
+    position: relative;
+    z-index: 3;
+  }
+  .header .logo-nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header .desktop-nav {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+  }
+  .header .menu-btn {
+    display: none;
+  }
+  .crypto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .crypto h2 {
+    width: 80%;
+    margin-top: 1rem;
+  }
+  .crypto img {
+    max-width: 100%;
+    margin: 2rem 0;
+  }
+  .crypto .text-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features {
+    margin-top: 5rem;
+    padding: 3rem;
+  }
+  .features .features-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .features h2 {
+    font-size: 1.2rem;
+  }
+  .features p {
+    color: #777;
+  }
+  .features img,
+  .features h2,
+  .features p {
+    margin-bottom: 2rem;
+  }
+  .features .card {
+    text-align: center;
+    width: 80%;
+  }
+  .mobile-app {
+    margin-top: 7rem;
+    justify-content: center;
+  }
+  .mobile-app img {
+    margin: 4rem 0;
+    max-width: 200px;
+  }
+  .mobile-app .mobile-app-text {
+    padding: 1.5rem;
+    max-width: 700px;
+  }
+  .mobile-app .mobile-app-text .app-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  .mobile-app .mobile-app-text .app-buttons img {
+    margin: 1.5rem 0;
+    min-width: 350px;
+    cursor: pointer;
+  }
+  .contact-text {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  form .name-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  form label {
+    width: 85%;
+    text-align: left;
+  }
+  form label,
+  form input {
+    margin: 0.5rem 0;
+  }
+}
+.fixed-download {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  background: #ededed;
+  width: 100%;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+  }
+  .header .desktop-nav {
+    display: none;
+  }
+  .header li {
+    margin-bottom: 1.3rem;
+  }
+  .header .main_logo {
+    position: relative;
+    z-index: 3;
+  }
+  .header .main_logo img {
+    width: 50px;
+    margin-right: 0.5rem;
+  }
+  .crypto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .crypto h2 {
+    width: 80%;
+    margin-top: 1rem;
+  }
+  .crypto .image-text-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .crypto img {
+    max-width: 50%;
+    margin: 2rem 0;
+  }
+  .crypto .text-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features {
+    margin-top: 5rem;
+  }
+  .features h2 {
+    font-size: 1.2rem;
+  }
+  .features p {
+    color: #777;
+  }
+  .features img,
+  .features h2,
+  .features p {
+    margin-bottom: 2rem;
+  }
+  .features .card {
+    text-align: center;
+    width: 80%;
+  }
+  .mobile-app {
+    margin-top: 7rem;
+    padding: 3rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .mobile-app img {
+    margin: 4rem;
+    max-width: 200px;
+  }
+  .mobile-app .app-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+  .mobile-app .app-buttons img {
+    margin: 0rem 2rem;
+    cursor: pointer;
+    max-width: 200px;
+  }
+  .contact-text {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  form label {
+    width: 85%;
+    text-align: left;
+  }
+  form label,
+  form input {
+    margin: 0.5rem 0;
+  }
+  .fixed-download {
+    display: none;
+  }
+  .footer {
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1000px) {
+  .header .logo-nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header .desktop-nav {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+  }
+  .header .desktop-nav li {
+    margin: 0;
+  }
+  .header .menu-btn {
+    display: none;
+  }
+  .crypto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .crypto h2 {
+    width: 70%;
+    margin-top: 1rem;
+  }
+  .crypto img {
+    max-width: 50%;
+    margin: 2rem 0;
+  }
+  .crypto .text-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features {
+    margin-top: 5rem;
+  }
+  .features h2 {
+    font-size: 1.2rem;
+  }
+  .features p {
+    color: #777;
+  }
+  .features img,
+  .features h2,
+  .features p {
+    margin-bottom: 2rem;
+  }
+  .features .card {
+    text-align: center;
+    width: 80%;
+  }
+  .mobile-app {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .mobile-app .mobile-app-wrapper h1 {
+    font-size: 2rem;
+  }
+  .mobile-app .mobile-app-wrapper p {
+    font-size: 1.1rem;
+  }
+  .mobile-app img {
+    margin: 4rem 0;
+    max-width: 200px;
+  }
+  .mobile-app .app-buttons {
+    flex-direction: row;
+    margin: 2rem 0;
+  }
+  .mobile-app .app-buttons img {
+    margin: 1.5rem 4rem;
+    min-width: 230px;
+    cursor: pointer;
+  }
+  .contact-text {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+  }
+  form label {
+    width: 85%;
+    text-align: left;
+  }
+  form label,
+  form input {
+    margin: 0.5rem 0;
+  }
+  .fixed-download {
+    display: none;
+  }
+  .footer {
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=main.css.map */

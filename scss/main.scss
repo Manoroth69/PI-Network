@@ -1,0 +1,148 @@
+@import "config";
+@import "reset";
+@import "menu";
+@import "hero";
+
+input,
+textarea {
+  width: 85%;
+  padding: 1.3rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  border: 1px solid #e1e1e1;
+  background: #f3f3f3;
+  transition: outline-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  resize: none;
+  &:focus {
+    outline: 1px solid #7f2d92;
+    -moz-outline-radius: 3px;
+  }
+}
+
+// MyHeader
+
+.header {
+  .main_logo {
+    display: flex;
+    align-items: center;
+    color: #ffc107;
+    padding: 1rem;
+
+    img {
+      width: 50px;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+// MyHero Section
+.hero,
+header {
+  @include backGround;
+  .left-col {
+    color: white;
+  }
+}
+
+.hero {
+  line-height: 1.5;
+
+}
+
+// MyCrypto Section
+.crypto {
+  h2 {
+    text-align: center;
+    color: #7f2d92;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+
+  .sm-btn {
+    margin-top: 1rem;
+  }
+}
+
+// Features
+.features {
+  text-align: center;
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    color: #777;
+  }
+
+  .features-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+    place-items: center;
+  }
+}
+
+// MyMobile App
+.mobile-app {
+  @include backGround;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+
+  .mobile-app-text {
+    h1 {
+      color: #fbb44a;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: white;
+      line-height: 1.7;
+    }
+  }
+}
+
+// MyContact
+.contact-text {
+  h1 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    color: #7f2d92;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+}
+
+// MyFooter
+.footer {
+  background: #1d0a26;
+  margin-top: 5rem;
+  height: 14rem;
+  padding: 2rem;
+
+  .footer-wrapper {
+    @include flexCenter;
+    .icons {
+      margin-bottom: 1.5rem;
+
+      i {
+        margin-left: 1rem;
+        font-size: 1.7rem;
+        color: #aaa;
+        cursor: pointer;
+        @include easeOut;
+        &:hover {
+          color: #f8f9fa;
+        }
+      }
+    }
+
+    p {
+      color: #aaa;
+    }
+  }
+}
+@import "mobile";

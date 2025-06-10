@@ -1,0 +1,94 @@
+$primary_color: #8c3590;
+$secondary-color: #ffc107;
+
+// Mixin
+@mixin easeOut {
+  transition: all 0.45s ease-in-out;
+}
+
+@mixin backGround {
+  background: linear-gradient(0.25turn, #8c3590, #2c4982);
+}
+
+@mixin flexCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Sm Btn
+.sm-btn {
+  background: transparent;
+  border: 1px solid $secondary-color;
+  padding: 0.5rem 2rem;
+  margin-top: 3rem;
+
+  a {
+    color: #7f2d92;
+    @include easeOut;
+
+    &:hover {
+      color: #007bff;
+    }
+  }
+}
+
+// Lg Buttons
+.btn-lg {
+  padding: 1.2em 1em;
+  background: $primary_color;
+  max-width: 300px;
+  border-radius: 150px;
+  border: 5px solid #6d2b8a;
+  @include easeOut;
+  font-weight: 600;
+  width: 90%;
+  margin: 0.5rem;
+
+  &:hover {
+    background: #fbb44a;
+  }
+}
+
+.yellow {
+  background: #fbb44a;
+}
+
+// Pi Button
+#pi-btn {
+  border: 1px solid $secondary-color;
+  padding: 0.7rem;
+  color: white;
+  @include easeOut;
+  display: inline-block;
+  &:hover {
+    background: #343a40;
+    color: $secondary-color;
+  }
+}
+
+// Send Button
+.send-button {
+  border: none;
+  font-size: 1.5rem;
+  width: 85%;
+  text-align: right;
+  background: none;
+  color: #7f2d92;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+// Download Btn
+.download-btn {
+  font-size: 1rem;
+  background: #fbb44a;
+  font-weight: bold;
+  padding: 3px 15px;
+  color: #343a40;
+  @include easeOut;
+
+  &:hover {
+    color: black;
+  }
+}

@@ -1,0 +1,541 @@
+// Small screens
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+
+    .desktop-nav {
+      display: none;
+    }
+
+    .main_logo {
+      position: relative;
+      z-index: 3;
+
+      img {
+        width: 50px;
+        margin-right: 0.5rem;
+      }
+    }
+    .menu-nav {
+      li {
+        margin-bottom: 1.3rem;
+      }
+    }
+  }
+
+
+  // MyCrypto
+  .crypto {
+    @include flexCenter;
+
+    h2 {
+      width: 80%;
+      margin-top: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      margin: 2rem 0;
+    }
+
+    .text-button {
+      @include flexCenter;
+    }
+  }
+
+  // MyFeatures
+  .features {
+    margin-top: 5rem;
+    img,
+    h2,
+    p {
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      text-align: center;
+      width: 80%;
+    }
+  }
+
+  // MyMobile App
+  .mobile-app {
+    margin-top: 7rem;
+    @include flexCenter;
+
+    img {
+      margin: 3rem 0;
+      max-width: 200px;
+    }
+
+    .mobile-app-text {
+      padding: 2rem;
+    }
+
+    .app-buttons {
+      @include flexCenter;
+      margin-bottom: 3rem;
+
+      img {
+        margin: 1rem 0;
+        min-width: 270px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // MyContact
+  .contact-text {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+
+  form {
+    @include flexCenter;
+    max-width: 80%;
+    margin: 0 auto;
+
+    .name-info {
+      @include flexCenter;
+      width: 100%;
+    }
+
+    label {
+      width: 85%;
+      text-align: left;
+    }
+
+    label,
+    input {
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+.fixed-download {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  background: #ededed;
+  width: 100%;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+// Lg Screens
+@media (min-width: 1000px) {
+  .header {
+    .main_logo {
+      position: relative;
+      z-index: 3;
+    }
+
+    .logo-nav-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+    }
+
+    .menu-btn {
+      display: none;
+    }
+  }
+
+  // MyHero
+
+
+  // MyCrypto
+  .crypto {
+    @include flexCenter;
+
+    h2 {
+      width: 80%;
+      margin-top: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      margin: 2rem 0;
+    }
+
+    .text-button {
+      @include flexCenter;
+    }
+  }
+
+  // MyFeatures
+  .features {
+    margin-top: 5rem;
+    padding: 3rem;
+    .features-wrapper {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      color: #777;
+    }
+
+    img,
+    h2,
+    p {
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      text-align: center;
+      width: 80%;
+    }
+  }
+
+  // MyMobile App
+  .mobile-app {
+    margin-top: 7rem;
+    justify-content: center;
+
+    img {
+      margin: 4rem 0;
+      max-width: 200px;
+    }
+
+    .mobile-app-text {
+      padding: 1.5rem;
+      max-width: 700px;
+
+      .app-buttons {
+        @include flexCenter;
+        margin: 2rem 0;
+
+        img {
+          margin: 1.5rem 0;
+          min-width: 350px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  // MyContact
+  .contact-text {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+
+  form {
+    @include flexCenter;
+
+    .name-info {
+      @include flexCenter;
+      width: 100%;
+    }
+
+    label {
+      width: 85%;
+      text-align: left;
+    }
+
+    label,
+    input {
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+.fixed-download {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  background: #ededed;
+  width: 100%;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+// Md Screens
+@media (min-width: 768px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+
+    .desktop-nav {
+      display: none;
+    }
+
+    li {
+      margin-bottom: 1.3rem;
+    }
+
+    .main_logo {
+      position: relative;
+      z-index: 3;
+
+      img {
+        width: 50px;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  // MyHero
+
+
+  // MyCrypto
+  .crypto {
+    @include flexCenter;
+
+    h2 {
+      width: 80%;
+      margin-top: 1rem;
+    }
+
+    .image-text-wrapper {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    img {
+      max-width: 50%;
+      margin: 2rem 0;
+    }
+
+    .text-button {
+      @include flexCenter;
+    }
+  }
+
+  // MyFeatures
+  .features {
+    margin-top: 5rem;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      color: #777;
+    }
+
+    img,
+    h2,
+    p {
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      text-align: center;
+      width: 80%;
+    }
+  }
+
+  // MyMobile App
+  .mobile-app {
+    margin-top: 7rem;
+    padding: 3rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    img {
+      margin: 4rem;
+      max-width: 200px;
+    }
+
+    .app-buttons {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 1rem;
+
+      img {
+        margin: 0rem 2rem;
+        cursor: pointer;
+        max-width: 200px;
+      }
+    }
+  }
+
+  // MyContact
+  .contact-text {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+
+  form {
+    @include flexCenter;
+    max-width: 70%;
+    margin: 0 auto;
+
+    label {
+      width: 85%;
+      text-align: left;
+    }
+
+    label,
+    input {
+      margin: 0.5rem 0;
+    }
+  }
+  .fixed-download {
+    display: none;
+  }
+
+  // My Footer
+  .footer {
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Lg Screens
+@media (min-width: 1000px) {
+  .header {
+    .logo-nav-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+
+      li {
+        margin: 0;
+      }
+    }
+
+    .menu-btn {
+      display: none;
+    }
+  }
+
+
+
+  // MyCrypto
+  .crypto {
+    @include flexCenter;
+
+    h2 {
+      width: 70%;
+      margin-top: 1rem;
+    }
+
+    img {
+      max-width: 50%;
+      margin: 2rem 0;
+    }
+
+    .text-button {
+      @include flexCenter;
+    }
+  }
+
+  // MyFeatures
+  .features {
+    margin-top: 5rem;
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      color: #777;
+    }
+
+    img,
+    h2,
+    p {
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      text-align: center;
+      width: 80%;
+    }
+  }
+
+  // MyMobile App
+  .mobile-app {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .mobile-app-wrapper {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    img {
+      margin: 4rem 0;
+      max-width: 200px;
+    }
+
+    .app-buttons {
+      flex-direction: row;
+      margin: 2rem 0;
+
+      img {
+        margin: 1.5rem 4rem;
+        min-width: 230px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // MyContact
+  .contact-text {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+
+  form {
+    @include flexCenter;
+    max-width: 50%;
+
+    label {
+      width: 85%;
+      text-align: left;
+    }
+
+    label,
+    input {
+      margin: 0.5rem 0;
+    }
+  }
+  .fixed-download {
+    display: none;
+  }
+
+  // My Footer
+  .footer {
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
